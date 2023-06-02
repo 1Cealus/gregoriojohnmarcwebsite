@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gregorio John Marc</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .nav-button {
+      margin-right: 10px;
+    }
+
+    section {
+      display: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<header id="page-header">
+  <h1>All About Gregorio John Marc.</h1>
+  <p>
+  Click on any buttons to start
+  <p>
+</header>
+
+
+  <nav>
+    <button class="nav-button" onclick="toggleSection('about-me')">About Me</button>
+    <button class="nav-button" onclick="toggleSection('coding-experience')">My Coding Experience</button>
+    <button class="nav-button" onclick="toggleSection('contact-me')">Contact Me</button>
+    <button class="nav-button" onclick="toggleSection('images')">Project Showcase</button>
+  </nav>
+
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Gregorio, John Marc. I'm an aspiring programmer who is currently taking BS-Computer Science in DLSU, right from the start I've been extremely close to computers and in high school I was introduced to the world of programming. From then on, it became the thing that I wanted to do, and I have been trying to get better at it ever since.
+      </p>  
+      <p>
+        Coding has been a fun hobby for me. It feels extremely rewarding to finish some of my projects and see it in proper working condition. As such getting better with it and tackling larger scale projects has always been my goal. I want to be a well rounded developer who can tackle both backend and frontend parts of developing.  
+      </p>       
+      <p>
+        I would say some of my biggest strengths are my grit and adaptability. I have and never will give up on a project even if it feels insourmountable at the time, because throughout my experiences with coding I have never had one where I thought I could not finish something. wether it be new challenges or something completely brand new to me, I will keep going and keep trying to finish it.
+      </p>
+    </section>
+
+    <section id="coding-experience">
+      <h2>My Coding Experience</h2>
+      <p>
+        I've been coding for quite a while, although it has since accelerated in college. During my high school years, while people might debate if HTML is a programming language or not, it was still my first foray into programming. Since then, in senior high, I took an elective in programming classes where I learned Python and Arduino, and now I know all about that, and what I have learned in university. Mainly, C, Java, Python, and Ruby.
+      </p>
+    </section>
+
+    <section id="contact-me">
+      <h2>Contact Me</h2>
+      <p>
+        You can reach me at <a href="mailto:gregoriojohnmarc@gmail.com">gregoriojohnmarc@gmail.com</a>.
+      </p>
+      <p>
+      Contact number: <span>09617467119</span>.
+      </p>
+      <p>
+      Social Links: <br>
+      Facebook: https://www.facebook.com/johnmarcaquino/ <br>
+      Github:   https://github.com/1Cealus
+    </section>
+
+    <section id="images">
+      <h2>Project Showcase</h2>
+      <figure>
+        <img src="https://i.ibb.co/H23td42/dungeons-and-doggos.jpg" alt="Dungeons and Doggos">
+        <figcaption>An RNG Text Based RPG Made in C.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.ibb.co/yFYN4jM/python-vector-calculator.jpg" alt="Python Vector Calculator">
+        <figcaption>A Vector Calculator Made in Python.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made By: Gregorio John Marc</p>
+  </footer>
+
+<script>
+function toggleSection(sectionId) {
+  const sections = document.querySelectorAll('section');
+  const header = document.getElementById('page-header');
+
+  sections.forEach(section => {
+    if (section.id === sectionId) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  });
+
+  header.style.display = 'none';
+}
+
+</script>
+</body>
+</html>
