@@ -54,7 +54,7 @@
               "threats": [
                 {
                   "id": "40eb91a7-ed76-4028-850f-6e76308115a3",
-                  "title": "New STRIDE threat",
+                  "title": "Spoofing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -67,7 +67,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -246,49 +246,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Verifies the Privilege",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "3e1e60c6-5c21-4513-b951-bf9fcd633642",
-            "source": {
-              "x": 526,
-              "y": 76
-            },
-            "target": {
-              "cell": "ce59a6bd-4dba-4da9-95d3-b20372aee49f"
-            },
-            "labels": [
-              "Verifies the Privilege"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Verified",
               "description": "",
               "outOfScope": false,
@@ -310,6 +267,12 @@
             },
             "labels": [
               "Verified"
+            ],
+            "vertices": [
+              {
+                "x": 750,
+                "y": 144
+              }
             ]
           },
           {
@@ -336,49 +299,6 @@
             },
             "labels": [
               "Generic Trust Boundary"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Insert Query with Feedback Comments",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "f50e2588-302b-428e-836c-7487e037f221",
-            "source": {
-              "x": 518,
-              "y": 340
-            },
-            "target": {
-              "cell": "03d36b39-8bcc-4ba6-b8bc-224acaa33f57"
-            },
-            "labels": [
-              "Insert Query with Feedback Comments"
             ]
           },
           {
@@ -609,6 +529,89 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verifies The Privilege",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d8b04ea9-db9c-495f-befa-cc6f17e8baa6",
+            "source": {
+              "x": 520,
+              "y": 60
+            },
+            "target": {
+              "cell": "76d2a80d-c9b9-4ec1-9f59-b44229ed56fa"
+            },
+            "labels": [
+              "Verifies The Privilege"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "94ef4f02-2554-4e4b-98de-b2ca282ffdf1",
+            "source": {
+              "x": 529,
+              "y": 340
+            },
+            "target": {
+              "cell": "1779c66c-d410-461d-998d-448a482fd4ad"
+            }
+          },
+          {
             "position": {
               "x": 450,
               "y": 310
@@ -645,7 +648,7 @@
               "threats": [
                 {
                   "id": "43316ce8-7938-41ff-a5e4-bb766d3d7d05",
-                  "title": "New STRIDE threat",
+                  "title": "Spoofing",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
@@ -658,7 +661,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -728,119 +731,127 @@
           },
           {
             "position": {
-              "x": 745,
-              "y": 50.999999999999886
+              "x": 774,
+              "y": 101
             },
             "size": {
-              "width": 160,
-              "height": 110
+              "width": 120,
+              "height": 60
             },
             "attrs": {
               "text": {
                 "text": "LDAP"
               },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "id": "ce59a6bd-4dba-4da9-95d3-b20372aee49f",
-            "zIndex": 18,
-            "data": {
-              "type": "tm.Process",
-              "name": "LDAP",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "5340d733-1180-45ed-a8d8-ccd680229692",
-                  "title": "New STRIDE threat",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Tampering with the Data Using the SQL Injection Attacck",
-                  "mitigation": "N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 1,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
-              }
-            }
-          },
-          {
-            "position": {
-              "x": 800,
-              "y": 310
-            },
-            "size": {
-              "width": 120,
-              "height": 120
-            },
-            "attrs": {
-              "text": {
-                "text": "SQL Database\n"
               },
-              "body": {
+              "bottomLine": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "process",
-            "id": "03d36b39-8bcc-4ba6-b8bc-224acaa33f57",
-            "zIndex": 19,
+            "shape": "store",
+            "id": "76d2a80d-c9b9-4ec1-9f59-b44229ed56fa",
+            "zIndex": 18,
             "data": {
-              "type": "tm.Process",
-              "name": "SQL Database\n",
+              "type": "tm.Store",
+              "name": "LDAP",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": [
                 {
-                  "id": "a523f223-7ecd-4da3-9b63-e2862ee31744",
-                  "title": "New STRIDE threat",
+                  "id": "e83ccecd-bbb6-46fb-a284-d8110fa2c665",
+                  "title": "Tampering With The Data Using The SQL Injection Attack",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
+                  "type": "Tampering",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 8,
+                  "number": 11,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 360
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SQL Database"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "1779c66c-d410-461d-998d-448a482fd4ad",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Store",
+              "name": "SQL Database",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "46a9f118-2749-4fc8-9a78-44fd2f2b2b5e",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
               }
             }
           }
@@ -849,6 +860,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 12
   }
 }
